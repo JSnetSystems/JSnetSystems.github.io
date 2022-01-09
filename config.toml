@@ -7,11 +7,13 @@ title = "My New Hugo Site"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
+enableEmoji = "true"
+
 
 [params]
   # LoveIt theme version
   version = "0.2.X"
-
+  
 [menu]
   [[menu.main]]
     identifier = "posts"
