@@ -1,6 +1,7 @@
 ---
-title: "zFS_post"
+title: "zFS Increasing Size"
 date: 2022-01-08T13:16:42-05:00
+author: Jeffrey Smith
 draft: false
 categories: [ "Mainframe" ]
 tags: [ "z/OS", "USS", "IDCAMS", "PAX" ]

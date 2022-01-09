@@ -1,6 +1,7 @@
 ---
-title: "OMVS_post"
+title: "OMVS Encoding"
 date: 2022-01-08T11:16:56-05:00
+author: Jeffrey Smith
 draft: false
 categories: [ "Mainframe" ]
 tags: [ "z/OS", "USS", "Code page" ]
