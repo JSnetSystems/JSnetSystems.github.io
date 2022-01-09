@@ -42,7 +42,7 @@ enableEmoji = "true"
       # Disqus comment config
       [params.page.comment.disqus]
         # LoveIt NEW | 0.1.1
-        enable = true
+        enable = false
         # Disqus shortname to use Disqus in posts
         shortname = ""
       # Gitalk comment config
@@ -55,7 +55,7 @@ enableEmoji = "true"
         clientSecret = ""
       # Valine comment config
       [params.page.comment.valine]
-        enable = false
+        enable = true
         appId = ""
         appKey = ""
         placeholder = ""
