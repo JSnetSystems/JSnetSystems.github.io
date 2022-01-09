@@ -37,6 +37,37 @@ enableEmoji = "true"
     appID = ""
     searchKey = ""
 
+[params.page.comment]
+      enable = true
+      # Disqus comment config
+      [params.page.comment.disqus]
+        # LoveIt NEW | 0.1.1
+        enable = true
+        # Disqus shortname to use Disqus in posts
+        shortname = ""
+      # Gitalk comment config
+      [params.page.comment.gitalk]
+        # LoveIt NEW | 0.1.1
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+      # Valine comment config
+      [params.page.comment.valine]
+        enable = false
+        appId = ""
+        appKey = ""
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
 
 [menu]
   [[menu.main]]
