@@ -8,8 +8,7 @@
 <meta property="og:description" content="zFS aggregate Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
 IBM link LARGER
  Snippet example from the IBM site
- //SYSTSIN DD *
-OSHELL /usr/sbin/mount -t ZFS -f PLEX.">
+ //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://JSnetSystems.github.io/posts/zfs_post/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-01-08T13:16:42-05:00">
@@ -19,8 +18,7 @@ OSHELL /usr/sbin/mount -t ZFS -f PLEX.">
 <meta name=twitter:description content="zFS aggregate Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
 IBM link LARGER
  Snippet example from the IBM site
- //SYSTSIN DD *
-OSHELL /usr/sbin/mount -t ZFS -f PLEX.">
+ //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.">
 <meta name=application-name content="My Tech Info Site">
 <meta name=apple-mobile-web-app-title content="My Tech Info Site"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
@@ -110,13 +108,14 @@ Cancel
 <blockquote>
 <p>Snippet example from the IBM site</p>
 </blockquote>
-<p>//SYSTSIN DD *</p>
-<p>OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +</p>
-<p>/service2 ; +</p>
-<p>/usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3 ; +</p>
-<p>cd /service2 ; +</p>
-<p>pax -rwvCMX -p eW . /service3 ;</p>
-<p>/*</p>
+<pre><code>//SYSTSIN  DD  *
+OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002           +
+ /service2                                                        ; +
+  /usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3    ; +
+  cd /service2                                                    ; +
+  pax -rwvCMX -p eW . /service3                                   ;
+/*
+</code></pre>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
