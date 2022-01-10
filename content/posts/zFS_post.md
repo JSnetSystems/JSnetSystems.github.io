@@ -16,16 +16,10 @@ IBM link {{< link "https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-eac
 
 >Snippet example from the IBM site
 
-//SYSTSIN  DD  *
-
-OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002           +
-
- /service2                                                        ; +
-
-  /usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3    ; +
-
-  cd /service2                                                    ; +
-
-  pax -rwvCMX -p eW . /service3                                   ;
-
-/*
+    //SYSTSIN  DD  *
+    OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002           +
+     /service2                                                        ; +
+      /usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3    ; +
+      cd /service2                                                    ; +
+      pax -rwvCMX -p eW . /service3                                   ;
+    /*

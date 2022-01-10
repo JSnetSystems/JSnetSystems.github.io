@@ -68,6 +68,13 @@ enableEmoji = "true"
     appID = ""
     searchKey = ""
 
+[params.page.code]
+  # whether to show the copy button of the code block
+  copy = true
+  # the maximum number of lines of displayed code by default
+  maxShownLines = 10
+
+#allow comments on post - off
 [params.page.comment]
       enable = false
       # Disqus comment config
@@ -100,6 +107,7 @@ enableEmoji = "true"
         enableQQ = false
         serverURLs = ""
 
+#socal media share links in post
 [params.page.share]
       enable = true
       Twitter = true
@@ -112,65 +120,6 @@ enableEmoji = "true"
     GitHub = "JSnetSystems"
     Linkedin = "mrjeffreyasmith/"
     Twitter = "SmittyJA"
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
     Email = "JSNetsystems@gmail.com"
     RSS = false # LoveIt NEW | 0.2.0
 
