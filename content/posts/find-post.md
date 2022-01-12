@@ -7,7 +7,7 @@ categories: [ "Mainframe" ]
 tags: [ "z/OS", "FIND", "SEARCH" ]
 ---
 
-## FIND Picture String
+## FIND Picture String  
 
 A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
 
@@ -15,7 +15,7 @@ There are several characters types to choose from.
 
 While in the SYSLOG or any output you can enter these command examples to find errors.
 
-__Example: Go into the SYSLOG and max to bottom of log__
+**Example: Go into the SYSLOG and max to bottom of log**
 
 This example will find any errors starting with the EQQ characters followed by any 4 characters and ending with a letter E going backwards in the SYSLOG.
 
@@ -38,3 +38,6 @@ Some other options types to use.
  * Greater-than           Any upper case alphabetic character              
  * Dollar-sign ($)        Any special character                            
 
+#  
+#  
+IBM link [Using picture strings](https://www.ibm.com/docs/en/zos/2.1.0?topic=strings-using-picture)
