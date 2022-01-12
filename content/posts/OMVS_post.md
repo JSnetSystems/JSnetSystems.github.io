@@ -7,10 +7,9 @@ categories: [ "Mainframe" ]
 tags: [ "z/OS", "USS", "Code page" ]
 
 ---
-
-## USS - OMVS command
-
-This characters bracket characters [] and others that don't convert to a readable form was driving me crazy.
+#  
+#  
+This characters bracket characters [ ] and others that don't convert to a readable form was driving me crazy.
 
 enter this command when starting a USS session: omvs convert((BPXFX111))
 

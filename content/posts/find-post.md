@@ -6,9 +6,8 @@ draft: false
 categories: [ "Mainframe" ]
 tags: [ "z/OS", "FIND", "SEARCH" ]
 ---
-
-## FIND Picture String  
-
+#  
+#  
 A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
 
 There are several characters types to choose from. 
