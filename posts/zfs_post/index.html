@@ -6,9 +6,8 @@
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
 <title>zFS Increasing Size - My Tech Info Site</title><meta name=Description content><meta property="og:title" content="zFS Increasing Size">
 <meta property="og:description" content="zFS aggregate Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
-IBM link LARGER
  Snippet example from the IBM site
- //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.">
+ //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +/service2 ; +/usr/sbin/mount -t ZFS -f PLEX.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://JSnetSystems.github.io/posts/zfs_post/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-01-08T13:16:42-05:00">
@@ -16,13 +15,12 @@ IBM link LARGER
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="zFS Increasing Size">
 <meta name=twitter:description content="zFS aggregate Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
-IBM link LARGER
  Snippet example from the IBM site
- //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.">
+ //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +/service2 ; +/usr/sbin/mount -t ZFS -f PLEX.">
 <meta name=application-name content="My Tech Info Site">
 <meta name=apple-mobile-web-app-title content="My Tech Info Site"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://JSnetSystems.github.io/posts/zfs_post/><link rel=prev href=https://JSnetSystems.github.io/posts/omvs_post/><link rel=next href=https://JSnetSystems.github.io/posts/find-post/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"zFS Increasing Size","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/JSnetSystems.github.io\/posts\/zfs_post\/"},"genre":"posts","keywords":"z\/OS, USS, IDCAMS, PAX","wordcount":93,"url":"https:\/\/JSnetSystems.github.io\/posts\/zfs_post\/","datePublished":"2022-01-08T13:16:42-05:00","dateModified":"2022-01-08T13:16:42-05:00","publisher":{"@type":"Organization","name":"Jeffrey Smith"},"author":{"@type":"Person","name":"Jeffrey Smith"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://JSnetSystems.github.io/posts/zfs_post/><link rel=prev href=https://JSnetSystems.github.io/posts/omvs_post/><link rel=next href=https://JSnetSystems.github.io/posts/find-post/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"zFS Increasing Size","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/JSnetSystems.github.io\/posts\/zfs_post\/"},"genre":"posts","keywords":"z\/OS, USS, IDCAMS, PAX","wordcount":94,"url":"https:\/\/JSnetSystems.github.io\/posts\/zfs_post\/","datePublished":"2022-01-08T13:16:42-05:00","dateModified":"2022-01-08T13:16:42-05:00","publisher":{"@type":"Organization","name":"Jeffrey Smith"},"author":{"@type":"Person","name":"Jeffrey Smith"},"description":""}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -90,7 +88,7 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">zFS Increasing Size</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Jeffrey Smith</a></span>&nbsp;<span class=post-category>included in <a href=/categories/mainframe/><i class="far fa-folder fa-fw"></i>Mainframe</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-08>2022-01-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;93 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-08>2022-01-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;94 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
@@ -104,7 +102,6 @@ Cancel
 </nav></div>
 </div><div class=content id=content><h2 id=zfs-aggregate>zFS aggregate</h2>
 <p>Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.</p>
-<p>IBM link <a href="https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-each-file-directory-aggregate-larger-data-set" target=_blank rel="noopener noreffer">LARGER</a></p>
 <blockquote>
 <p>Snippet example from the IBM site</p>
 </blockquote>
@@ -116,6 +113,9 @@ OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002           +
   pax -rwvCMX -p eW . /service3                                   ;
 /*
 </code></pre>
+<h1 id=heading></h1>
+<h1 id=heading-1></h1>
+<p>IBM link <a href="https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-each-file-directory-aggregate-larger-data-set" target=_blank rel="noopener noreffer">LARGER dataset</a></p>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>

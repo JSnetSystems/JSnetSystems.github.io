@@ -91,10 +91,11 @@ Example: Go into the SYSLOG and max to bottom of log</div><div class=post-footer
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/zfs_post/>zFS Increasing Size</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Jeffrey Smith</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-08>2022-01-08</time></span>&nbsp;<span class=post-category>included in <a href=/categories/mainframe/><i class="far fa-folder fa-fw"></i>Mainframe</a></span></div><div class=content>zFS aggregate Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
-IBM link LARGER
 Snippet example from the IBM site
 //SYSTSIN DD *
-OSHELL /usr/sbin/mount -t ZFS -f PLEX.</div><div class=post-footer>
+OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +
+/service2 ; +
+/usr/sbin/mount -t ZFS -f PLEX.</div><div class=post-footer>
 <a href=/posts/zfs_post/>Read More</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/z/os/>z/OS</a>,&nbsp;<a href=/tags/uss/>USS</a>,&nbsp;<a href=/tags/idcams/>IDCAMS</a>,&nbsp;<a href=/tags/pax/>PAX</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
@@ -106,7 +107,7 @@ pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &mldr; Ýpa
 to this line:
 pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &mldr; [pattern &mldr;]
 much easier to read. 👍
-OMVS Display command Another command option for readability, while in ishell:</div><div class=post-footer>
+IBM Link OMVS command</div><div class=post-footer>
 <a href=/posts/omvs_post/>Read More</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/z/os/>z/OS</a>,&nbsp;<a href=/tags/uss/>USS</a>,&nbsp;<a href=/tags/code-page/>Code page</a></div></div>
 </article></div></div>
