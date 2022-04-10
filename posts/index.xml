@@ -1,4 +1,12 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>All Posts - My Tech Info Site</title><link>https://JSnetSystems.github.io/posts/</link><description>All Posts | My Tech Info Site</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Jan 2022 19:15:39 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Find Picture String</title><link>https://JSnetSystems.github.io/posts/find-post/</link><pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/find-post/</guid><description>A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>All Posts - My Tech Info Site</title><link>https://JSnetSystems.github.io/posts/</link><description>All Posts | My Tech Info Site</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 Apr 2022 13:26:39 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Checking BPXPRM syntax</title><link>https://JSnetSystems.github.io/posts/setomvs_post/</link><pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid><description>A handy operator command to check syntax to a BPXPRMxx parm member.
+After making some mount point changes recenly I issused the command
+SETOMVS SYNTAXCHECK=(P3)
+Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)
+IBM link BPXPRMxx syntax checking
+Another useful command
+D OMVS,MF
+Will display information about the last 10 or less mount or move failures
+IBM link Displaying z/OS UNIX Status</description></item><item><title>Find Picture String</title><link>https://JSnetSystems.github.io/posts/find-post/</link><pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/find-post/</guid><description>A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
 There are several characters types to choose from.
 While in the SYSLOG or any output you can enter these command examples to find errors.
 Example: Go into the SYSLOG and max to bottom of log
