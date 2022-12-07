@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>USS - Category - My Tech Info Site</title>
+        <link>https://JSnetSystems.github.io/categories/uss/</link>
+        <description>USS - Category - My Tech Info Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 06 Dec 2022 20:02:48 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/categories/uss/" rel="self" type="application/rss+xml" /><item>
+    <title>chtag - Character Encoding</title>
+    <link>https://JSnetSystems.github.io/posts/chtag_post/</link>
+    <pubDate>Tue, 06 Dec 2022 20:02:48 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://JSnetSystems.github.io/posts/chtag_post/</guid>
+    <description><![CDATA[I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I haven&rsquo;t or needed to use before.
+The chtag command for character encoding for EBCDIC.
+After editing some Helloworld.py file using vi editor I recevied the follow error when I try to run the python code.
+/home/#&gt;python hello.pySyntaxError: Non-UTF-8 code starting with '\x97' I needed to change the codeset to IBM-1047 for python to run correctly on USS z/OS.]]></description>
+</item></channel>
+</rss>

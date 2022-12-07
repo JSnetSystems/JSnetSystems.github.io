@@ -4,6 +4,31 @@
         <link>https://JSnetSystems.github.io/tags/z/os/</link>
         <description>z/OS - Tag - My Tech Info Site</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://JSnetSystems.github.io/tags/z/os/" rel="self" type="application/rss+xml" /><item>
+    <title>chtag - Character Encoding</title>
+    <link>https://JSnetSystems.github.io/posts/chtag_post/</link>
+    <pubDate>Tue, 06 Dec 2022 20:02:48 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://JSnetSystems.github.io/posts/chtag_post/</guid>
+    <description><![CDATA[I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I haven&rsquo;t or needed to use before.
+The chtag command for character encoding for EBCDIC.
+After editing some Helloworld.py file using vi editor I recevied the follow error when I try to run the python code.
+/home/#&gt;python hello.pySyntaxError: Non-UTF-8 code starting with '\x97' I needed to change the codeset to IBM-1047 for python to run correctly on USS z/OS.]]></description>
+</item><item>
+    <title>Checking BPXPRM syntax</title>
+    <link>https://JSnetSystems.github.io/posts/setomvs_post/</link>
+    <pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid>
+    <description><![CDATA[A handy operator command to check syntax to a BPXPRMxx parm member.
+After making some mount point changes recenly I issused the command
+ SETOMVS SYNTAXCHECK=(P3)
+ Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)
+IBM link BPXPRMxx syntax checking
+Another useful command
+ D OMVS,MF
+ Will display information about the last 10 or less mount or move failures
+  IBM link Displaying z/OS UNIX Status]]></description>
+</item><item>
     <title>Find Picture String</title>
     <link>https://JSnetSystems.github.io/posts/find-post/</link>
     <pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate>
