@@ -2,7 +2,7 @@
 title: "chtag - Character Encoding"
 date: 2022-12-06T20:02:48-05:00
 author: Jeffrey Smith
-draft: true
+draft: false
 categories: [ "USS" ]
 tags: [ "z/OS", "UNIX", "Python", "code page" ]
 ---
