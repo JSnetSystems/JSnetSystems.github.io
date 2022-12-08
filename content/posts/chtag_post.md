@@ -9,7 +9,7 @@ tags: [ "z/OS", "UNIX", "Python", "code page" ]
 #
 #
 
-I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I havent or needed to use before.
+I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I haven't or needed to use before.
 
 The [chtag command](https://www.ibm.com/docs/en/zos/2.5.0?topic=descriptions-chtag-change-file-tag-information) for character encoding for EBCDIC.
 
