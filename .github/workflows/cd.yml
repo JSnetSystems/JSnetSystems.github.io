@@ -10,7 +10,8 @@ on:
 
 jobs:
   build-and-deploy-site:
-    runs-on: windows-latest
+#    runs-on: windows-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -21,8 +22,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-#         hugo-version: 'latest'
-          hugo-version: 'v0.91.2'
+         hugo-version: 'latest'
 
       - name: Build site with Hugo
         run: hugo --minify
