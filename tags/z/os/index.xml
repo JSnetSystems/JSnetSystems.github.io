@@ -1,4 +1,7 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>z/OS - Tag - My Tech Info Site</title><link>https://JSnetSystems.github.io/tags/z/os/</link><description>z/OS - Tag - My Tech Info Site</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://JSnetSystems.github.io/tags/z/os/" rel="self" type="application/rss+xml"/><item><title>Checking BPXPRM syntax</title><link>https://JSnetSystems.github.io/posts/setomvs_post/</link><pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid><description>A handy operator command to check syntax to a BPXPRMxx parm member.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>z/OS - Tag - My Tech Info Site</title><link>https://JSnetSystems.github.io/tags/z/os/</link><description>z/OS - Tag - My Tech Info Site</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://JSnetSystems.github.io/tags/z/os/" rel="self" type="application/rss+xml"/><item><title>chtag - Character Encoding</title><link>https://JSnetSystems.github.io/posts/chtag_post/</link><pubDate>Tue, 06 Dec 2022 20:02:48 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/chtag_post/</guid><description>I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I havent or needed to use before.
+The chtag command for character encoding for EBCDIC.
+After editing some Helloworld.py file using vi editor I recevied the follow error when I try to run the python code.
+/home/#&amp;gt;python hello.py SyntaxError: Non-UTF-8 code starting with &amp;#39;\x97&amp;#39; I needed to change the codeset to IBM-1047 for python to run correctly on USS z/OS.</description></item><item><title>Checking BPXPRM syntax</title><link>https://JSnetSystems.github.io/posts/setomvs_post/</link><pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid><description>A handy operator command to check syntax to a BPXPRMxx parm member.
 After making some mount point changes recenly I issused the command
 SETOMVS SYNTAXCHECK=(P3)
 Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)
@@ -12,14 +15,12 @@ While in the SYSLOG or any output you can enter these command examples to find e
 Example: Go into the SYSLOG and max to bottom of log
 This example will find any errors starting with the EQQ characters followed by any 4 characters and ending with a letter E going backwards in the SYSLOG.</description></item><item><title>zFS Increasing Size</title><link>https://JSnetSystems.github.io/posts/zfs_post/</link><pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/zfs_post/</guid><description>Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
 Snippet example from the IBM site
-//SYSTSIN DD *
-OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +
-/service2 ; +
-/usr/sbin/mount -t ZFS -f PLEX.</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><description><![CDATA[This characters bracket characters [ ] and others that don&rsquo;t convert to a readable form was driving me crazy.
+//SYSTSIN DD * OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 + /service2 ; + /usr/sbin/mount -t ZFS -f PLEX.</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><description><![CDATA[This characters bracket characters [ ] and others that don&rsquo;t convert to a readable form was driving me crazy.
 enter this command when starting a USS session: omvs convert((BPXFX111))
 Example, in man pages converts this line:
 pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &hellip; Ýpattern &hellip;¨
 to this line:
 pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &hellip; [pattern &hellip;]
 much easier to read. 👍
-  IBM Link OMVS command]]></description></item></channel></rss>
+IBM Link OMVS command
+Display command Another command option for readability, while in ishell:]]></description></item></channel></rss>

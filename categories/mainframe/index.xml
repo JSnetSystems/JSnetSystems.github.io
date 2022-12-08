@@ -12,14 +12,12 @@ While in the SYSLOG or any output you can enter these command examples to find e
 Example: Go into the SYSLOG and max to bottom of log
 This example will find any errors starting with the EQQ characters followed by any 4 characters and ending with a letter E going backwards in the SYSLOG.</description></item><item><title>zFS Increasing Size</title><link>https://JSnetSystems.github.io/posts/zfs_post/</link><pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/zfs_post/</guid><description>Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
 Snippet example from the IBM site
-//SYSTSIN DD *
-OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +
-/service2 ; +
-/usr/sbin/mount -t ZFS -f PLEX.</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><description><![CDATA[This characters bracket characters [ ] and others that don&rsquo;t convert to a readable form was driving me crazy.
+//SYSTSIN DD * OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 + /service2 ; + /usr/sbin/mount -t ZFS -f PLEX.</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><description><![CDATA[This characters bracket characters [ ] and others that don&rsquo;t convert to a readable form was driving me crazy.
 enter this command when starting a USS session: omvs convert((BPXFX111))
 Example, in man pages converts this line:
 pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &hellip; Ýpattern &hellip;¨
 to this line:
 pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &hellip; [pattern &hellip;]
 much easier to read. 👍
-  IBM Link OMVS command]]></description></item></channel></rss>
+IBM Link OMVS command
+Display command Another command option for readability, while in ishell:]]></description></item></channel></rss>
