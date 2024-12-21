@@ -9,7 +9,7 @@ tags: [ "z/OS", "USS", "Code page" ]
 ---
 #  
 #  
-Thiis character brackets [ ] and others that don't convert to a readable form was driving me crazy.
+This character brackets [ ] and others that don't convert to a readable form was driving me crazy.
 
 enter this command when starting a USS session: omvs convert((BPXFX111))
 
