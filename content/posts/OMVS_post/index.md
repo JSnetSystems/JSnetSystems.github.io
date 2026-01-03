@@ -24,7 +24,7 @@ pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] ... [pattern ...]
 
 much easier to read. :thumbsup:
 
-IBM Link [OMVS command](https://www.ibm.com/docs/en/zos/2.3.0?topic=locales-using-convert-option-omvs-command) 
+IBM Link [OMVS command](https://www.ibm.com/docs/en/zos/3.2.0?topic=locales-using-convert-option-omvs-command) 
 
 
 ### Display command
@@ -37,6 +37,6 @@ Command ===>DISPLAY CCSID 1047
 
 The DISPLAY command allows you to view data that would not normally be displayed.
 
-IBM Link [DISPLAY command](https://www.ibm.com/docs/en/zos/2.1.0?topic=commands-display-control-display)
+IBM Link [DISPLAY command](https://www.ibm.com/docs/en/zos/3.2.0?topic=commands-displaycontrol-display)
 
 

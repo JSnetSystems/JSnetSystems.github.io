@@ -6,6 +6,10 @@ defaultContentLanguage = "en"
 languageCode = "en"
 enableEmoji = true
 
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   version = "0.2.X"
 
@@ -30,9 +34,6 @@ enableEmoji = true
       paginate = 6
       defaultHiddenFromHomePage = false
 
-# Output formats
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
 
 # -------------------------
 # Search Configuration

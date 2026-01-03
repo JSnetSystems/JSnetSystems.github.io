@@ -40,7 +40,10 @@ and now the hello.py works as expected.
 >
 >Hello World!
 
-NOTE: Using the _ls -T_ will provide the same results as the chtag -p command used above
+{{< admonition type=tip title="Tip" >}}
+Using the _ls -T_ will provide the same results as the chtag -p command used above
+{{< /admonition >}}
+
 
 ###
 
