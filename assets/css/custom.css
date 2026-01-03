@@ -1,0 +1,58 @@
+/* ---------------------------
+   TAG BADGE REDESIGN
+---------------------------- */
+
+.tag, .tags a, a.tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  color: #fff !important;
+  padding: 4px 10px;
+  margin: 4px 6px 4px 0;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.tag:hover, .tags a:hover, a.tag:hover {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* ---------------------------
+   TAG LIST PAGE (/tags/)
+---------------------------- */
+
+.taxonomy-cloud a {
+  font-size: 1rem !important;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #e3f2fd;
+  color: #0d47a1 !important;
+  margin: 6px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.taxonomy-cloud a:hover {
+  background: #bbdefb;
+  transform: translateY(-2px);
+}
+
+/* ---------------------------
+   TAG PAGE HEADER (/tags/<tag>/)
+---------------------------- */
+
+.taxonomy-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1565c0;
+  margin-bottom: 1rem;
+}
+
+.taxonomy-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}

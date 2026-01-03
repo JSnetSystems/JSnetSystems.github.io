@@ -1,22 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>BPX - Tag - My Tech Info Site</title>
-        <link>https://JSnetSystems.github.io/tags/bpx/</link>
-        <description>BPX - Tag - My Tech Info Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 Apr 2022 13:26:39 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/tags/bpx/" rel="self" type="application/rss+xml" /><item>
-    <title>Checking BPXPRM syntax</title>
-    <link>https://JSnetSystems.github.io/posts/setomvs_post/</link>
-    <pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid>
-    <description><![CDATA[A handy operator command to check syntax to a BPXPRMxx parm member.
-After making some mount point changes recenly I issused the command
- SETOMVS SYNTAXCHECK=(P3)
- Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)
-IBM link BPXPRMxx syntax checking
-Another useful command
- D OMVS,MF
- Will display information about the last 10 or less mount or move failures
-  IBM link Displaying z/OS UNIX Status]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BPX - Tag - My Tech Info Site</title>
+    <link>http://localhost:1313/tags/bpx/</link>
+    <description>My Tech Info Site</description>
+    <generator>Hugo 0.154.1 &amp; FixIt v0.4.0-beta</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Apr 2022 13:26:39 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bpx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Checking BPXPRM syntax</title>
+      <link>http://localhost:1313/posts/setomvs_post/</link>
+      <pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate>
+      <guid>http://localhost:1313/posts/setomvs_post/</guid>
+      <category domain="http://localhost:1313/categories/mainframe/">Mainframe</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/setomvs_post/cover_setomvs.jpeg&#39; alt=&#34;Syntax check command SETOMVS&#34; height=&#34;722&#34; width=&#34;1720&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A handy operator command to check syntax to a BPXPRMxx parm member.&lt;/p&gt;&#xA;&lt;p&gt;After making some mount point changes recenly I issused the command&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;SETOMVS SYNTAXCHECK=(P3)&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)&lt;/p&gt;&#xA;&lt;p&gt;IBM link &lt;a href=&#34;https://www.ibm.com/docs/en/zos/2.1.0?topic=sys1parmlib-checking-bpxprmxx-syntax&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;BPXPRMxx syntax checking&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Another useful command&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;D OMVS,MF&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Will display information about the last 10 or less mount or move failures&lt;/p&gt;&#xA;&lt;p&gt;IBM link &lt;a href=&#34;https://www.ibm.com/docs/en/zos/2.1.0?topic=command-displaying-zos-unix-system-services-status&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Displaying z/OS UNIX Status&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

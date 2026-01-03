@@ -1,172 +1,186 @@
 baseURL = "https://JSnetSystems.github.io/"
-# [en, zh-cn, fr, ...] determines default content language
-defaultContentLanguage = "en"
-# language code
-languageCode = "en"
 title = "My Tech Info Site"
+theme = "FixIt"
 
-# Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
-enableEmoji = "true"
+defaultContentLanguage = "en"
+languageCode = "en"
+enableEmoji = true
 
 [params]
-  # LoveIt theme version
   version = "0.2.X"
 
-
-# Home page config
+  # -------------------------
+  # Home Page Configuration
+  # -------------------------
   [params.home]
-    # LoveIt NEW | 0.2.0 amount of RSS pages
     rss = 10
-    # Home page profile
+
     [params.home.profile]
       enable = true
-      # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
-      # URL of avatar shown in home page
       avatarURL = "/images/myprofile.jpg"
-      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
-      # subtitle shown in home page
       subtitle = "Jeffrey Smith"
-      # whether to use typeit animation for subtitle
       typeit = true
-      # whether to show social links
       social = true
-      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
       disclaimer = ""
-    # Home page posts
+
     [params.home.posts]
       enable = true
-      # special amount of posts in each home posts page
       paginate = 6
-      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
-      # default behavior when you don't set "hiddenFromHomePage" in front matter
       defaultHiddenFromHomePage = false
 
+# Output formats
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+# -------------------------
+# Search Configuration
+# -------------------------
 [params.search]
   enable = true
-  # type of search engine ("lunr", "algolia")
   type = "lunr"
-  # max index length of the chunked content
   contentLength = 4000
-  # placeholder of the search bar
   placeholder = ""
-  # LoveIt NEW | 0.2.1 max number of results length
   maxResultLength = 10
-  # LoveIt NEW | 0.2.3 snippet length of the result
   snippetLength = 30
-  # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
   highlightTag = "em"
-  # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
+
   [params.search.algolia]
     index = ""
     appID = ""
     searchKey = ""
 
+# -------------------------
+# Code Block Settings
+# -------------------------
 [params.page.code]
-  # whether to show the copy button of the code block
   copy = true
-  # the maximum number of lines of displayed code by default
-  maxShownLines = 10
+  # maxShownLines = 10
 
-#allow comments on post - off
+# -------------------------
+# Comments (Disabled)
+# -------------------------
 [params.page.comment]
-      enable = false
-      # Disqus comment config
-      [params.page.comment.disqus]
-        # LoveIt NEW | 0.1.1
-        enable = false
-        # Disqus shortname to use Disqus in posts
-        shortname = ""
-      # Gitalk comment config
-      [params.page.comment.gitalk]
-        # LoveIt NEW | 0.1.1
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
-      # Valine comment config
-      [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
-        avatar = "mp"
-        meta= ""
-        pageSize = 10
-        lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = false
-        serverURLs = ""
+  enable = false
 
-#socal media share links in post
+  [params.page.comment.disqus]
+    enable = false
+    shortname = ""
+
+  [params.page.comment.gitalk]
+    enable = false
+    owner = ""
+    repo = ""
+    clientId = ""
+    clientSecret = ""
+
+  [params.page.comment.valine]
+    enable = false
+    appId = ""
+    appKey = ""
+    placeholder = ""
+    avatar = "mp"
+    meta = ""
+    pageSize = 10
+    lang = ""
+    visitor = true
+    recordIP = true
+    highlight = true
+    enableQQ = false
+    serverURLs = ""
+
+[params.assets]
+  customCSS = ["css/custom.css"]
+
+
+# -------------------------
+# Social Share Buttons
+# -------------------------
 [params.page.share]
-      enable = true
-      Twitter = true
-      Facebook = false
-      Linkedin = true
-      github = true
+  enable = true
+  Twitter = true
+  Facebook = false
+  Linkedin = true
+  github = true
 
-# Social config about the author
+# -------------------------
+# Social Links
+# -------------------------
 [params.social]
-    GitHub = "JSnetSystems"
-    Linkedin = "mrjeffreyasmith/"
-    Twitter = "SmittyJA"
-    Email = "JSNetsystems@gmail.com"
-    RSS = false # LoveIt NEW | 0.2.0
-
+  GitHub = "JSnetSystems"
+  Linkedin = "mrjeffreyasmith/"
+  Twitter = "SmittyJA"
+  Email = "JSNetsystems@gmail.com"
 
 [menu]
+
+  # Home
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  # Posts
   [[menu.main]]
     identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
     name = "Posts"
     url = "/posts/"
-    # title will be shown when you hover on this menu link
-    title = ""
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
     weight = 2
+
+  # Categories
   [[menu.main]]
     identifier = "categories"
-    pre = ""
-    post = ""
     name = "Categories"
     url = "/categories/"
-    title = ""
     weight = 3
+
+  # Tags
   [[menu.main]]
-    identifier = "about"
-    pre = ""
-    post = ""
-    name = "About"
-    url = "/about/"
-    title = ""
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
+  # About (optional — only include if you create /about/)
+  # [[menu.main]]
+  #   identifier = "about"
+  #   name = "About"
+  #   url = "/about/"
+  #   weight = 5
+
+
+  # Footer Menu
+  [[menu.footer]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.footer]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.footer]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
     weight = 3
 
-# Markup related configuration in Hugo
-[markup]
-  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-  [markup.highlight]
-    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-    noClasses = false
+  [[menu.footer]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
 
-
+  # Optional About page (only if you create /about/)
+  # [[menu.footer]]
+  #   identifier = "about"
+  #   name = "About"
+  #   url = "/about/"
+  #   weight = 5
 

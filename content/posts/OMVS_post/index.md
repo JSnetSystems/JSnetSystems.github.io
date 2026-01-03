@@ -7,9 +7,10 @@ categories: [ "Mainframe" ]
 tags: [ "z/OS", "USS", "Code page" ]
 
 ---
-#  
-#  
-Thiss character brackets [ ] and others that don't convert to a readable form was driving me crazy.
+![OMVS encoding characters](cover_OMVS.jpeg)
+
+ 
+This character brackets [ ] and others that don't convert to a readable form was driving me crazy.
 
 enter this command when starting a USS session: omvs convert((BPXFX111))
 
@@ -23,8 +24,6 @@ pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] ... [pattern ...]
 
 much easier to read. :thumbsup:
 
-#  
-#  
 IBM Link [OMVS command](https://www.ibm.com/docs/en/zos/2.3.0?topic=locales-using-convert-option-omvs-command) 
 
 
@@ -38,8 +37,6 @@ Command ===>DISPLAY CCSID 1047
 
 The DISPLAY command allows you to view data that would not normally be displayed.
 
-#  
-#  
 IBM Link [DISPLAY command](https://www.ibm.com/docs/en/zos/2.1.0?topic=commands-display-control-display)
 
 

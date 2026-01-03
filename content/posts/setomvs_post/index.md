@@ -6,8 +6,8 @@ draft: false
 categories: [ "Mainframe" ]
 tags: [ "z/OS", "USS", "BPX" ]
 ---
-#  
-#  
+![Syntax check command SETOMVS](cover_setomvs.jpeg)
+
 A handy operator command to check syntax to a BPXPRMxx parm member. 
 
 After making some mount point changes recenly I issused the command
@@ -23,6 +23,5 @@ Another useful command
 >D OMVS,MF
 
 Will display information about the last 10 or less mount or move failures
-#  
-#  
+
 IBM link [Displaying z/OS UNIX Status](https://www.ibm.com/docs/en/zos/2.1.0?topic=command-displaying-zos-unix-system-services-status)

@@ -1,56 +1,44 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Mainframe - Category - My Tech Info Site</title>
-        <link>https://JSnetSystems.github.io/categories/mainframe/</link>
-        <description>Mainframe - Category - My Tech Info Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 Apr 2022 13:26:39 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/categories/mainframe/" rel="self" type="application/rss+xml" /><item>
-    <title>Checking BPXPRM syntax</title>
-    <link>https://JSnetSystems.github.io/posts/setomvs_post/</link>
-    <pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid>
-    <description><![CDATA[A handy operator command to check syntax to a BPXPRMxx parm member.
-After making some mount point changes recenly I issused the command
- SETOMVS SYNTAXCHECK=(P3)
- Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)
-IBM link BPXPRMxx syntax checking
-Another useful command
- D OMVS,MF
- Will display information about the last 10 or less mount or move failures
-  IBM link Displaying z/OS UNIX Status]]></description>
-</item><item>
-    <title>Find Picture String</title>
-    <link>https://JSnetSystems.github.io/posts/find-post/</link>
-    <pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://JSnetSystems.github.io/posts/find-post/</guid>
-    <description><![CDATA[A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
-There are several characters types to choose from.
-While in the SYSLOG or any output you can enter these command examples to find errors.
-Example: Go into the SYSLOG and max to bottom of log
-This example will find any errors starting with the EQQ characters followed by any 4 characters and ending with a letter E going backwards in the SYSLOG.]]></description>
-</item><item>
-    <title>zFS Increasing Size</title>
-    <link>https://JSnetSystems.github.io/posts/zfs_post/</link>
-    <pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://JSnetSystems.github.io/posts/zfs_post/</guid>
-    <description><![CDATA[Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
- Snippet example from the IBM site
- //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +/service2 ; +/usr/sbin/mount -t ZFS -f PLEX.]]></description>
-</item><item>
-    <title>OMVS Encoding</title>
-    <link>https://JSnetSystems.github.io/posts/omvs_post/</link>
-    <pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://JSnetSystems.github.io/posts/omvs_post/</guid>
-    <description><![CDATA[This characters bracket characters [ ] and others that don&rsquo;t convert to a readable form was driving me crazy.
-enter this command when starting a USS session: omvs convert((BPXFX111))
-Example, in man pages converts this line:
-pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &hellip; Ýpattern &hellip;¨
-to this line:
-pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &hellip; [pattern &hellip;]
-much easier to read. 👍
-  IBM Link OMVS command]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mainframe - Category - My Tech Info Site</title>
+    <link>http://localhost:1313/categories/mainframe/</link>
+    <description>My Tech Info Site</description>
+    <generator>Hugo 0.154.1 &amp; FixIt v0.4.0-beta</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Apr 2022 13:26:39 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/mainframe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Checking BPXPRM syntax</title>
+      <link>http://localhost:1313/posts/setomvs_post/</link>
+      <pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate>
+      <guid>http://localhost:1313/posts/setomvs_post/</guid>
+      <category domain="http://localhost:1313/categories/mainframe/">Mainframe</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/setomvs_post/cover_setomvs.jpeg&#39; alt=&#34;Syntax check command SETOMVS&#34; height=&#34;722&#34; width=&#34;1720&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A handy operator command to check syntax to a BPXPRMxx parm member.&lt;/p&gt;&#xA;&lt;p&gt;After making some mount point changes recenly I issused the command&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;SETOMVS SYNTAXCHECK=(P3)&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)&lt;/p&gt;&#xA;&lt;p&gt;IBM link &lt;a href=&#34;https://www.ibm.com/docs/en/zos/2.1.0?topic=sys1parmlib-checking-bpxprmxx-syntax&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;BPXPRMxx syntax checking&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Another useful command&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;D OMVS,MF&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Will display information about the last 10 or less mount or move failures&lt;/p&gt;&#xA;&lt;p&gt;IBM link &lt;a href=&#34;https://www.ibm.com/docs/en/zos/2.1.0?topic=command-displaying-zos-unix-system-services-status&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Displaying z/OS UNIX Status&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Find Picture String</title>
+      <link>http://localhost:1313/posts/find_post/</link>
+      <pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate>
+      <guid>http://localhost:1313/posts/find_post/</guid>
+      <category domain="http://localhost:1313/categories/mainframe/">Mainframe</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/find_post/cover_find.jpeg&#39; alt=&#34;Character Encoding for USS&#34; height=&#34;722&#34; width=&#34;1720&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.&lt;/p&gt;&#xA;&lt;p&gt;There are several characters types to choose from.&lt;/p&gt;&#xA;&lt;p&gt;While in the SYSLOG or any output you can enter these command examples to find errors.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example: Go into the SYSLOG and max to bottom of log&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>zFS Increasing Size</title>
+      <link>http://localhost:1313/posts/zfs_post/</link>
+      <pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate>
+      <guid>http://localhost:1313/posts/zfs_post/</guid>
+      <category domain="http://localhost:1313/categories/mainframe/">Mainframe</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/zfs_post/cover_zFS.jpeg&#39; alt=&#34;Character Encoding for USS&#34; height=&#34;722&#34; width=&#34;1720&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Snippet example from the IBM site&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre&gt;&lt;code&gt;//SYSTSIN  DD  *&#xD;&#xA;OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002           +&#xD;&#xA; /service2                                                        ; +&#xD;&#xA;  /usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3    ; +&#xD;&#xA;  cd /service2                                                    ; +&#xD;&#xA;  pax -rwvCMX -p eW . /service3                                   ;&#xD;&#xA;/*&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;IBM link &lt;a href=&#34;https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-each-file-directory-aggregate-larger-data-set&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;LARGER dataset&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OMVS Encoding</title>
+      <link>http://localhost:1313/posts/omvs_post/</link>
+      <pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate>
+      <guid>http://localhost:1313/posts/omvs_post/</guid>
+      <category domain="http://localhost:1313/categories/mainframe/">Mainframe</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/omvs_post/cover_OMVS.jpeg&#39; alt=&#34;OMVS encoding characters&#34; height=&#34;722&#34; width=&#34;1720&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This character brackets [ ] and others that don&amp;rsquo;t convert to a readable form was driving me crazy.&lt;/p&gt;&#xA;&lt;p&gt;enter this command when starting a USS session: omvs convert((BPXFX111))&lt;/p&gt;&#xA;&lt;p&gt;Example, in man pages converts this line:&lt;/p&gt;&#xA;&lt;p&gt;pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &amp;hellip; Ýpattern &amp;hellip;¨&lt;/p&gt;&#xA;&lt;p&gt;to this line:&lt;/p&gt;&#xA;&lt;p&gt;pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &amp;hellip; [pattern &amp;hellip;]&lt;/p&gt;&#xA;&lt;p&gt;much easier to read. &amp;#x1f44d;&lt;/p&gt;&#xA;&lt;p&gt;IBM Link &lt;a href=&#34;https://www.ibm.com/docs/en/zos/2.3.0?topic=locales-using-convert-option-omvs-command&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;OMVS command&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

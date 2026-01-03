@@ -1,16 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>IDCAMS - Tag - My Tech Info Site</title>
-        <link>https://JSnetSystems.github.io/tags/idcams/</link>
-        <description>IDCAMS - Tag - My Tech Info Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 08 Jan 2022 13:16:42 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/tags/idcams/" rel="self" type="application/rss+xml" /><item>
-    <title>zFS Increasing Size</title>
-    <link>https://JSnetSystems.github.io/posts/zfs_post/</link>
-    <pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://JSnetSystems.github.io/posts/zfs_post/</guid>
-    <description><![CDATA[Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
- Snippet example from the IBM site
- //SYSTSIN DD *OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +/service2 ; +/usr/sbin/mount -t ZFS -f PLEX.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDCAMS - Tag - My Tech Info Site</title>
+    <link>http://localhost:1313/tags/idcams/</link>
+    <description>My Tech Info Site</description>
+    <generator>Hugo 0.154.1 &amp; FixIt v0.4.0-beta</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Jan 2022 13:16:42 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/idcams/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zFS Increasing Size</title>
+      <link>http://localhost:1313/posts/zfs_post/</link>
+      <pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate>
+      <guid>http://localhost:1313/posts/zfs_post/</guid>
+      <category domain="http://localhost:1313/categories/mainframe/">Mainframe</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/zfs_post/cover_zFS.jpeg&#39; alt=&#34;Character Encoding for USS&#34; height=&#34;722&#34; width=&#34;1720&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Snippet example from the IBM site&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre&gt;&lt;code&gt;//SYSTSIN  DD  *&#xD;&#xA;OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002           +&#xD;&#xA; /service2                                                        ; +&#xD;&#xA;  /usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3    ; +&#xD;&#xA;  cd /service2                                                    ; +&#xD;&#xA;  pax -rwvCMX -p eW . /service3                                   ;&#xD;&#xA;/*&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;IBM link &lt;a href=&#34;https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-each-file-directory-aggregate-larger-data-set&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;LARGER dataset&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

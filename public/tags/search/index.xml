@@ -1,18 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>SEARCH - Tag - My Tech Info Site</title>
-        <link>https://JSnetSystems.github.io/tags/search/</link>
-        <description>SEARCH - Tag - My Tech Info Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Jan 2022 19:15:39 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/tags/search/" rel="self" type="application/rss+xml" /><item>
-    <title>Find Picture String</title>
-    <link>https://JSnetSystems.github.io/posts/find-post/</link>
-    <pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://JSnetSystems.github.io/posts/find-post/</guid>
-    <description><![CDATA[A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
-There are several characters types to choose from.
-While in the SYSLOG or any output you can enter these command examples to find errors.
-Example: Go into the SYSLOG and max to bottom of log
-This example will find any errors starting with the EQQ characters followed by any 4 characters and ending with a letter E going backwards in the SYSLOG.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SEARCH - Tag - My Tech Info Site</title>
+    <link>http://localhost:1313/tags/search/</link>
+    <description>My Tech Info Site</description>
+    <generator>Hugo 0.154.1 &amp; FixIt v0.4.0-beta</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Jan 2022 19:15:39 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find Picture String</title>
+      <link>http://localhost:1313/posts/find_post/</link>
+      <pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate>
+      <guid>http://localhost:1313/posts/find_post/</guid>
+      <category domain="http://localhost:1313/categories/mainframe/">Mainframe</category>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#39;http://localhost:1313/posts/find_post/cover_find.jpeg&#39; alt=&#34;Character Encoding for USS&#34; height=&#34;722&#34; width=&#34;1720&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.&lt;/p&gt;&#xA;&lt;p&gt;There are several characters types to choose from.&lt;/p&gt;&#xA;&lt;p&gt;While in the SYSLOG or any output you can enter these command examples to find errors.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example: Go into the SYSLOG and max to bottom of log&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

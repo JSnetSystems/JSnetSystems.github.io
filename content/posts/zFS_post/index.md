@@ -7,8 +7,8 @@ categories: [ "Mainframe" ]
 tags: [ "z/OS", "USS", "IDCAMS", "PAX" ]
 
 ---
-#  
-#  
+![Character Encoding for USS](cover_zFS.jpeg)
+
 Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn't aware this could be done with the pax command instead of the DFSMS REPRO command.
 
 
@@ -22,8 +22,6 @@ Needed to increase the size of a zFS mounted dataset the other day. I will just 
       pax -rwvCMX -p eW . /service3                                   ;
     /*
   
-
-#         
-#  
+    
 IBM link [LARGER dataset](https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-each-file-directory-aggregate-larger-data-set)
 

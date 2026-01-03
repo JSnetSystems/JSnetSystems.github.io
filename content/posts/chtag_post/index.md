@@ -6,12 +6,12 @@ draft: false
 categories: [ "USS" ]
 tags: [ "z/OS", "UNIX", "Python", "code page" ]
 ---
-#
-#
+
+![Character Encoding for USS](cover_chtag.jpeg)
 
 I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I haven't or needed to use before.
 
-The [chtag command](https://www.ibm.com/docs/en/zos/2.5.0?topic=descriptions-chtag-change-file-tag-information) for character encoding for EBCDIC.
+The [chtag command](https://www.ibm.com/docs/en/zos/3.2.0?topic=descriptions-chtag-change-file-tag-information) for character encoding for EBCDIC.
 
 After editing some Helloworld.py file using vi editor I recevied the follow error when I try to run the python code.
 
@@ -46,12 +46,12 @@ NOTE: Using the _ls -T_ will provide the same results as the chtag -p command us
 
 Links I used to install ZOAU using pax:
 
-https://www.ibm.com/docs/en/zoau/1.2.x?topic=installing-configuring-zoau
+https://www.ibm.com/docs/en/zoau/1.4.x?topic=installing-zoau
 
 
 The IBM Open Enterprise SDK Python:
 
 https://www.ibm.com/products/open-enterprise-python-zos
 
-https://www.ibm.com/docs/en/python-zos/3.9?topic=configuration-installing-configuring-pax-edition
+https://www.ibm.com/docs/en/python-zos/3.14.0?topic=installation-configuration
 

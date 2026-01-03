@@ -6,8 +6,9 @@ draft: false
 categories: [ "Mainframe" ]
 tags: [ "z/OS", "FIND", "SEARCH" ]
 ---
-#  
-#  
+![Character Encoding for USS](cover_find.jpeg)
+
+
 A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
 
 There are several characters types to choose from. 
@@ -37,6 +38,5 @@ Some other options types to use.
  * Greater-than           Any upper case alphabetic character              
  * Dollar-sign ($)        Any special character                            
 
-#  
-#  
-IBM link [Using picture strings](https://www.ibm.com/docs/en/zos/2.1.0?topic=strings-using-picture)
+  
+IBM link [Using picture strings](https://www.ibm.com/docs/en/zos/3.2.0?topic=strings-using-picture)
