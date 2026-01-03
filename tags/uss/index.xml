@@ -1,19 +1,35 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>USS - Tag - My Tech Info Site</title><link>https://JSnetSystems.github.io/tags/uss/</link><description>USS - Tag - My Tech Info Site</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 Apr 2022 13:26:39 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/tags/uss/" rel="self" type="application/rss+xml"/><item><title>Checking BPXPRM syntax</title><link>https://JSnetSystems.github.io/posts/setomvs_post/</link><pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid><description>A handy operator command to check syntax to a BPXPRMxx parm member.
-After making some mount point changes recenly I issused the command
-SETOMVS SYNTAXCHECK=(P3)
-Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)
-IBM link BPXPRMxx syntax checking
-Another useful command
-D OMVS,MF
-Will display information about the last 10 or less mount or move failures
-IBM link Displaying z/OS UNIX Status</description></item><item><title>zFS Increasing Size</title><link>https://JSnetSystems.github.io/posts/zfs_post/</link><pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/zfs_post/</guid><description>Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
-Snippet example from the IBM site
-//SYSTSIN DD * OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 + /service2 ; + /usr/sbin/mount -t ZFS -f PLEX.</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><description><![CDATA[This characters bracket characters [ ] and others that don&rsquo;t convert to a readable form was driving me crazy.
-enter this command when starting a USS session: omvs convert((BPXFX111))
-Example, in man pages converts this line:
-pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &hellip; Ýpattern &hellip;¨
-to this line:
-pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &hellip; [pattern &hellip;]
-much easier to read. 👍
-IBM Link OMVS command
-Display command Another command option for readability, while in ishell:]]></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>USS - Tag - My Tech Info Site</title><link>https://JSnetSystems.github.io/tags/uss/</link><description>My Tech Info Site</description><generator>Hugo 0.154.2 &amp; FixIt v0.4.0-beta</generator><language>en</language><lastBuildDate>Sat, 09 Apr 2022 13:26:39 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/tags/uss/index.xml" rel="self" type="application/rss+xml"/><item><title>Checking BPXPRM syntax</title><link>https://JSnetSystems.github.io/posts/setomvs_post/</link><pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid><category domain="https://JSnetSystems.github.io/categories/mainframe/">Mainframe</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/setomvs_post/cover_setomvs.jpeg' alt="Syntax check command SETOMVS" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;A handy operator command to check syntax to a BPXPRMxx parm member.&lt;/p&gt;
+&lt;p&gt;After making some mount point changes recenly I issused the command&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SETOMVS SYNTAXCHECK=(P3)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)&lt;/p&gt;
+&lt;p&gt;IBM link &lt;a href="https://www.ibm.com/docs/en/zos/2.1.0?topic=sys1parmlib-checking-bpxprmxx-syntax" target="_blank" rel="external nofollow noopener noreferrer"&gt;BPXPRMxx syntax checking&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another useful command&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;D OMVS,MF&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Will display information about the last 10 or less mount or move failures&lt;/p&gt;
+&lt;p&gt;IBM link &lt;a href="https://www.ibm.com/docs/en/zos/2.1.0?topic=command-displaying-zos-unix-system-services-status" target="_blank" rel="external nofollow noopener noreferrer"&gt;Displaying z/OS UNIX Status&lt;/a&gt;&lt;/p&gt;</description></item><item><title>zFS Increasing Size</title><link>https://JSnetSystems.github.io/posts/zfs_post/</link><pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/zfs_post/</guid><category domain="https://JSnetSystems.github.io/categories/mainframe/">Mainframe</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/zfs_post/cover_zFS.jpeg' alt="Character Encoding for USS" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Snippet example from the IBM site&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;//SYSTSIN DD *
+OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +
+ /service2 ; +
+ /usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3 ; +
+ cd /service2 ; +
+ pax -rwvCMX -p eW . /service3 ;
+/*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;IBM link &lt;a href="https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-each-file-directory-aggregate-larger-data-set" target="_blank" rel="external nofollow noopener noreferrer"&gt;LARGER dataset&lt;/a&gt;&lt;/p&gt;</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><category domain="https://JSnetSystems.github.io/categories/mainframe/">Mainframe</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/omvs_post/cover_OMVS.jpeg' alt="OMVS encoding characters" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;This character brackets [ ] and others that don&amp;rsquo;t convert to a readable form was driving me crazy.&lt;/p&gt;
+&lt;p&gt;enter this command when starting a USS session: omvs convert((BPXFX111))&lt;/p&gt;
+&lt;p&gt;Example, in man pages converts this line:&lt;/p&gt;
+&lt;p&gt;pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &amp;hellip; Ýpattern &amp;hellip;¨&lt;/p&gt;
+&lt;p&gt;to this line:&lt;/p&gt;
+&lt;p&gt;pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &amp;hellip; [pattern &amp;hellip;]&lt;/p&gt;
+&lt;p&gt;much easier to read. &amp;#x1f44d;&lt;/p&gt;
+&lt;p&gt;IBM Link &lt;a href="https://www.ibm.com/docs/en/zos/2.3.0?topic=locales-using-convert-option-omvs-command" target="_blank" rel="external nofollow noopener noreferrer"&gt;OMVS command&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

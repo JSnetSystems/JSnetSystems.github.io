@@ -1,26 +1,99 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>My Tech Info Site</title><link>https://JSnetSystems.github.io/</link><description>My Tech Info Site</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 06 Dec 2022 20:02:48 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Character Encoding - chtag</title><link>https://JSnetSystems.github.io/posts/chtag_post/</link><pubDate>Tue, 06 Dec 2022 20:02:48 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/chtag_post/</guid><description><![CDATA[I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I haven&rsquo;t or needed to use before.
-The chtag command for character encoding for EBCDIC.
-After editing some Helloworld.py file using vi editor I recevied the follow error when I try to run the python code.
-/home/#&gt;python hello.py SyntaxError: Non-UTF-8 code starting with &#39;\x97&#39; I needed to change the codeset to IBM-1047 for python to run correctly on USS z/OS.]]></description></item><item><title>Checking BPXPRM syntax</title><link>https://JSnetSystems.github.io/posts/setomvs_post/</link><pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid><description>A handy operator command to check syntax to a BPXPRMxx parm member.
-After making some mount point changes recenly I issused the command
-SETOMVS SYNTAXCHECK=(P3)
-Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)
-IBM link BPXPRMxx syntax checking
-Another useful command
-D OMVS,MF
-Will display information about the last 10 or less mount or move failures
-IBM link Displaying z/OS UNIX Status</description></item><item><title>Find Picture String</title><link>https://JSnetSystems.github.io/posts/find-post/</link><pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/find-post/</guid><description>A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.
-There are several characters types to choose from.
-While in the SYSLOG or any output you can enter these command examples to find errors.
-Example: Go into the SYSLOG and max to bottom of log
-This example will find any errors starting with the EQQ characters followed by any 4 characters and ending with a letter E going backwards in the SYSLOG.</description></item><item><title>zFS Increasing Size</title><link>https://JSnetSystems.github.io/posts/zfs_post/</link><pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/zfs_post/</guid><description>Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.
-Snippet example from the IBM site
-//SYSTSIN DD * OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 + /service2 ; + /usr/sbin/mount -t ZFS -f PLEX.</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><author>Author</author><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><description><![CDATA[This characters bracket characters [ ] and others that don&rsquo;t convert to a readable form was driving me crazy.
-enter this command when starting a USS session: omvs convert((BPXFX111))
-Example, in man pages converts this line:
-pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &hellip; Ýpattern &hellip;¨
-to this line:
-pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &hellip; [pattern &hellip;]
-much easier to read. 👍
-IBM Link OMVS command
-Display command Another command option for readability, while in ishell:]]></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Tech Info Site</title><link>https://JSnetSystems.github.io/</link><description>My Tech Info Site</description><generator>Hugo 0.154.2 &amp; FixIt v0.4.0-beta</generator><language>en</language><lastBuildDate>Tue, 06 Dec 2022 20:02:48 -0500</lastBuildDate><atom:link href="https://JSnetSystems.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Character Encoding - chtag</title><link>https://JSnetSystems.github.io/posts/chtag_post/</link><pubDate>Tue, 06 Dec 2022 20:02:48 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/chtag_post/</guid><category domain="https://JSnetSystems.github.io/categories/uss/">USS</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/chtag_post/cover_chtag.jpeg' alt="Character Encoding for USS" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;I recently installed IBM Z Open Automation Utilities and Python on z/OS and learned a new command I haven&amp;rsquo;t or needed to use before.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://www.ibm.com/docs/en/zos/3.2.0?topic=descriptions-chtag-change-file-tag-information" target="_blank" rel="external nofollow noopener noreferrer"&gt;chtag command&lt;/a&gt; for character encoding for EBCDIC.&lt;/p&gt;
+&lt;p&gt;After editing some Helloworld.py file using vi editor I recevied the follow error when I try to run the python code.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/home/#&amp;gt;python hello.py
+SyntaxError: Non-UTF-8 code starting with &amp;#39;\x97&amp;#39; &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I needed to change the codeset to IBM-1047 for python to run correctly on USS z/OS.&lt;/p&gt;
+&lt;p&gt;Before the change:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/home/#&amp;gt;chtag -p hello.py&lt;/p&gt;
+&lt;p&gt;m IBM-1047 T=off hello.py&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I issued &lt;strong&gt;chtag -tc 1047 hello.py&lt;/strong&gt; to correct the issue.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/home/#&amp;gt;chtag -p hello.py&lt;/p&gt;
+&lt;p&gt;t IBM-1047 T=on hello.py&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and now the hello.py works as expected.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/home/#&amp;gt;python hello.py&lt;/p&gt;
+&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;NOTE: Using the &lt;em&gt;ls -T&lt;/em&gt; will provide the same results as the chtag -p command used above&lt;/p&gt;
+&lt;h3 class="heading-element"&gt;&lt;span&gt;&lt;/span&gt;
+ &lt;a href="#" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;Links I used to install ZOAU using pax:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.ibm.com/docs/en/zoau/1.4.x?topic=installing-zoau" target="_blank" rel="external nofollow noopener noreferrer"&gt;https://www.ibm.com/docs/en/zoau/1.4.x?topic=installing-zoau&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The IBM Open Enterprise SDK Python:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.ibm.com/products/open-enterprise-python-zos" target="_blank" rel="external nofollow noopener noreferrer"&gt;https://www.ibm.com/products/open-enterprise-python-zos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.ibm.com/docs/en/python-zos/3.14.0?topic=installation-configuration" target="_blank" rel="external nofollow noopener noreferrer"&gt;https://www.ibm.com/docs/en/python-zos/3.14.0?topic=installation-configuration&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Checking BPXPRM syntax</title><link>https://JSnetSystems.github.io/posts/setomvs_post/</link><pubDate>Sat, 09 Apr 2022 13:26:39 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/setomvs_post/</guid><category domain="https://JSnetSystems.github.io/categories/mainframe/">Mainframe</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/setomvs_post/cover_setomvs.jpeg' alt="Syntax check command SETOMVS" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;A handy operator command to check syntax to a BPXPRMxx parm member.&lt;/p&gt;
+&lt;p&gt;After making some mount point changes recenly I issused the command&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SETOMVS SYNTAXCHECK=(P3)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Where P3 is the member in SYS1.PARMLIB that was changed (i.e BPXPRMP3)&lt;/p&gt;
+&lt;p&gt;IBM link &lt;a href="https://www.ibm.com/docs/en/zos/2.1.0?topic=sys1parmlib-checking-bpxprmxx-syntax" target="_blank" rel="external nofollow noopener noreferrer"&gt;BPXPRMxx syntax checking&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another useful command&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;D OMVS,MF&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Will display information about the last 10 or less mount or move failures&lt;/p&gt;
+&lt;p&gt;IBM link &lt;a href="https://www.ibm.com/docs/en/zos/2.1.0?topic=command-displaying-zos-unix-system-services-status" target="_blank" rel="external nofollow noopener noreferrer"&gt;Displaying z/OS UNIX Status&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Find Picture String</title><link>https://JSnetSystems.github.io/posts/find_post/</link><pubDate>Tue, 11 Jan 2022 19:15:39 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/find_post/</guid><category domain="https://JSnetSystems.github.io/categories/mainframe/">Mainframe</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/find_post/cover_find.jpeg' alt="Character Encoding for USS" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;A nice option to the find command that comes in handy is the picture string. I like to use it to find error messages in logs for my normal daily health checks.&lt;/p&gt;
+&lt;p&gt;There are several characters types to choose from.&lt;/p&gt;
+&lt;p&gt;While in the SYSLOG or any output you can enter these command examples to find errors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example: Go into the SYSLOG and max to bottom of log&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This example will find any errors starting with the EQQ characters followed by any 4 characters and ending with a letter E going backwards in the SYSLOG.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;COMMAND ===&amp;gt; FIND P&amp;rsquo;EQQ====E&amp;rsquo; prev&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This example will find any messages starting with HASP followed by any 2 digits and ending with 5. Perhaps not useful but you get the idea.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;COMMAND ===&amp;gt; FIND P&amp;rsquo;HASP##5&amp;rsquo; prev&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Some other options types to use.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Equal-sign (=) Any character (don&amp;rsquo;t care)&lt;/li&gt;
+&lt;li&gt;Not-sign (¬) Any non-blank character&lt;/li&gt;
+&lt;li&gt;Period (.) Any non-display (invalid) character&lt;/li&gt;
+&lt;li&gt;Sharp (#) Any numeric character (digit)&lt;/li&gt;
+&lt;li&gt;Minus-sign (-) Any non-numeric character&lt;/li&gt;
+&lt;li&gt;At-sign (@) Any alphabetic character&lt;/li&gt;
+&lt;li&gt;Less-than Any lower case alphabetic character&lt;/li&gt;
+&lt;li&gt;Greater-than Any upper case alphabetic character&lt;/li&gt;
+&lt;li&gt;Dollar-sign ($) Any special character&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IBM link &lt;a href="https://www.ibm.com/docs/en/zos/3.2.0?topic=strings-using-picture" target="_blank" rel="external nofollow noopener noreferrer"&gt;Using picture strings&lt;/a&gt;&lt;/p&gt;</description></item><item><title>zFS Increasing Size</title><link>https://JSnetSystems.github.io/posts/zfs_post/</link><pubDate>Sat, 08 Jan 2022 13:16:42 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/zfs_post/</guid><category domain="https://JSnetSystems.github.io/categories/mainframe/">Mainframe</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/zfs_post/cover_zFS.jpeg' alt="Character Encoding for USS" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;Needed to increase the size of a zFS mounted dataset the other day. I will just provide the link to IBM website for the details but instead of duplicating everthing here, but I wasn&amp;rsquo;t aware this could be done with the pax command instead of the DFSMS REPRO command.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Snippet example from the IBM site&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;//SYSTSIN DD *
+OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +
+ /service2 ; +
+ /usr/sbin/mount -t ZFS -f PLEX.NEW.AGGR002.LDS0002 /service3 ; +
+ cd /service2 ; +
+ pax -rwvCMX -p eW . /service3 ;
+/*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;IBM link &lt;a href="https://www.ibm.com/docs/en/zos/2.4.0?topic=iscma-copying-each-file-directory-aggregate-larger-data-set" target="_blank" rel="external nofollow noopener noreferrer"&gt;LARGER dataset&lt;/a&gt;&lt;/p&gt;</description></item><item><title>OMVS Encoding</title><link>https://JSnetSystems.github.io/posts/omvs_post/</link><pubDate>Sat, 08 Jan 2022 11:16:56 -0500</pubDate><guid>https://JSnetSystems.github.io/posts/omvs_post/</guid><category domain="https://JSnetSystems.github.io/categories/mainframe/">Mainframe</category><description>&lt;p&gt;&lt;img loading="lazy" src='https://JSnetSystems.github.io/posts/omvs_post/cover_OMVS.jpeg' alt="OMVS encoding characters" height="722" width="1720"&gt;&lt;/p&gt;
+&lt;p&gt;This character brackets [ ] and others that don&amp;rsquo;t convert to a readable form was driving me crazy.&lt;/p&gt;
+&lt;p&gt;enter this command when starting a USS session: omvs convert((BPXFX111))&lt;/p&gt;
+&lt;p&gt;Example, in man pages converts this line:&lt;/p&gt;
+&lt;p&gt;pax Ý-cdEnvz¨Ý-H|-L¨Ý-f archive¨ Ý-o type¨ Ý-s substitute¨ &amp;hellip; Ýpattern &amp;hellip;¨&lt;/p&gt;
+&lt;p&gt;to this line:&lt;/p&gt;
+&lt;p&gt;pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &amp;hellip; [pattern &amp;hellip;]&lt;/p&gt;
+&lt;p&gt;much easier to read. &amp;#x1f44d;&lt;/p&gt;
+&lt;p&gt;IBM Link &lt;a href="https://www.ibm.com/docs/en/zos/2.3.0?topic=locales-using-convert-option-omvs-command" target="_blank" rel="external nofollow noopener noreferrer"&gt;OMVS command&lt;/a&gt;&lt;/p&gt;
+&lt;h3 class="heading-element" id="display-command"&gt;&lt;span&gt;Display command&lt;/span&gt;
+ &lt;a href="#display-command" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;Another command option for readability, while in ishell:&lt;/p&gt;
+&lt;p&gt;while browsing a file&lt;/p&gt;
+&lt;p&gt;Command ===&amp;gt;DISPLAY CCSID 1047&lt;/p&gt;
+&lt;p&gt;The DISPLAY command allows you to view data that would not normally be displayed.&lt;/p&gt;
+&lt;p&gt;IBM Link &lt;a href="https://www.ibm.com/docs/en/zos/2.1.0?topic=commands-display-control-display" target="_blank" rel="external nofollow noopener noreferrer"&gt;DISPLAY command&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
