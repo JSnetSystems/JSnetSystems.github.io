@@ -32,4 +32,4 @@ OSHELL /usr/sbin/mount -t ZFS -f PLEX.OLD.AGGR002.LDS0002 +
 &lt;p&gt;to this line:&lt;/p&gt;
 &lt;p&gt;pax [-cdEnvz][-H|-L][-f archive] [-o type] [-s substitute] &amp;hellip; [pattern &amp;hellip;]&lt;/p&gt;
 &lt;p&gt;much easier to read. &amp;#x1f44d;&lt;/p&gt;
-&lt;p&gt;IBM Link &lt;a href="https://www.ibm.com/docs/en/zos/2.3.0?topic=locales-using-convert-option-omvs-command" target="_blank" rel="external nofollow noopener noreferrer"&gt;OMVS command&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;IBM Link &lt;a href="https://www.ibm.com/docs/en/zos/3.2.0?topic=locales-using-convert-option-omvs-command" target="_blank" rel="external nofollow noopener noreferrer"&gt;OMVS command&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
